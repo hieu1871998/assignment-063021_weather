@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/css/index.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/fabric.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/fabric.components.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/fabric-icons.css">
+    <script type="text/javascript" src="resources/js/index.js"></script>
+    <script type="text/javascript" src="resources/js/fabric.min.js"></script>
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="ms-Grid" dir="ltr">
+        <div class="ms-Grid-row header align-items__center acrylic">
+            <div class="ms-Grid-col ms-sm5 ms-md3">
+                <span class="ms-smOffset1 ms-font-xxl ms-fontColor-white">Weather</span>
+            </div>
+            <div class="ms-Grid-col ms-sm7 ms-md3 ms-smPush0 ms-mdPush6">
+                <form class="ms-Grid-row align-items__center" autocomplete="off">
+                    <div class="ms-Grid-col ms-sm12">
+                        <input id="cityInput" class="text-field rounded-corners__2px acrylic" type="text" placeholder="Search">
+                    </div>                    
+                    <button class="search-button align-items__center justify-content__center rounded-corners__2px" onclick="fetchWeather(); return false;">
+                        <i class="ms-Icon ms-Icon--Search ms-fontSize-20"></i>
+                    </button>
+                </form>                
+            </div>
+        </div>
+        <div class="ms-Grid-row justify-content__center">
+            <div id="weather" class="currentWeather-box ms-fontColor-white">
+                <div id="location" class="ms-fontSize-32 ms-fontWeight-light"></div>
+                <div class="currentWeather-info">
+                    <div id="iconArea">
+                        <img id="icon" src="">
+                    </div>
+                    <div id="temp" class="ms-fontSize-68 ms-fontWeight-light"></div>
+                    <div id="tempConvert" class="conversion-area">
+                        <button id="currentConversion" class="current-conversion">C</button>
+                        <button id="convertButton" class="conversion-button">F</button>
+                    </div>
+                </div>                
+                <div id="description" class="ms-fontSize-24 ms-fontWeight-light"></div>
+                <div id="information" class="currentWeather-info ms-fontSize-18 ms-fontWeight-light">
+                        <div id="feelsLike" class="current_info"></div>
+                        <div id="wind" class="current_info"></div>
+                        <div id="visibility" class="current_info"></div>
+                        <div id="humidity" class="current_info"></div>
+                </div>
+            </div> 
+        </div> 
+    </div>          
+</body>
+</html>
