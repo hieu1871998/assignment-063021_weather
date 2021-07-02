@@ -30,7 +30,7 @@ function drawWeather(data) {
     var fahrenheit = Math.round(parseFloat(data.main.temp) * 9 / 5 - 457.87);
     var icon = document.getElementById('icon');
     var iconCode = data.weather[0].icon;
-    var iconUrl = 'http://openweathermap.org/img/wn/' + iconCode + '@2x.png';
+    var iconUrl = 'https://openweathermap.org/img/wn/' + iconCode + '@2x.png';
     var temp = document.getElementById('temp');
     var description = document.getElementById('description');
     var celciusFeelsLike = Math.round(parseFloat(data.main.feels_like) - 273.15);

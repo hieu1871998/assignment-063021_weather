@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'FabricMDL2Icons';
-    src: url('../font/fabric-icons-88e88feb.woff') format('woff');
+    src: url('../fonts/fabric-icons-88e88feb.woff') format('woff');
 }
 * {box-sizing: border-box;}
 html, body {
