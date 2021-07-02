@@ -91,23 +91,23 @@ function getTime(data) {
     var currentTime = d.getHours();
     
     if (currentTime >= 4 && currentTime < 7) {
-        document.body.style.background = 'url(/resources/bg/dawn.jpeg) center center / cover no-repeat';
+        document.body.style.background = 'url(resources/bg/dawn.jpeg) center center / cover no-repeat';
     }
 
     if (currentTime >= 7 && currentTime < 16) {
-        document.body.style.background = 'url(/resources/bg/morning.jpeg) center center / cover no-repeat';
+        document.body.style.background = 'url(resources/bg/morning.jpeg) center center / cover no-repeat';
     }
 
     if (currentTime >= 16 && currentTime < 17) {
-        document.body.style.background = 'url(/resources/bg/afternoon.jpeg) center center / cover no-repeat';
+        document.body.style.background = 'url(resources/bg/afternoon.jpeg) center center / cover no-repeat';
     }
 
     if (currentTime >= 17 && currentTime < 19) {
-        document.body.style.background = 'url(/resources/bg/sunset.jpeg) center center / cover no-repeat';
+        document.body.style.background = 'url(resources/bg/sunset.jpeg) center center / cover no-repeat';
     }
     
     if ((currentTime >= 19 && currentTime < 24) || (currentTime >= 24 && currentTime < 4)) {
-        document.body.style.background = 'url(/resources/bg/night.jpeg) center center / cover no-repeat';
+        document.body.style.background = 'url(resources/bg/night.jpeg) center center / cover no-repeat';
     }
 }
 
